@@ -1,0 +1,15 @@
+<section class="review-carousel">
+  <button class="nav prev" (click)="prev()">‹</button>
+  <div class="viewport">
+    <div class="track" [style.transform]="'translateX(-' + (current * 100) + '%)'">
+      <ng-container *ngFor="let r of reviews">
+        <div class="slide">
+            here below
+          <app-review-card [author]="r.author" [text]="r.text" [role]="r.role ?? ''" [rating]="r.rating"></app-review-card>
+            here above
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <button class="nav next" (click)="next()">›</button>
+</section>

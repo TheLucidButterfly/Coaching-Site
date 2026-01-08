@@ -1,0 +1,23 @@
+.review-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 18px;
+  border-radius: 12px;
+  min-width: 220px;
+  max-width: 320px;
+  color: var(--text);
+}
+.review-body {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.review-meta {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.author { font-weight:700; }
+.role { color: var(--muted); font-size:12px; }
+.rating { margin-top:10px; color:var(--accent); }

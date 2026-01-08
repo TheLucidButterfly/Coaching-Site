@@ -1,0 +1,4 @@
+.minimal-review-carousel { display:flex; align-items:center; gap:12px; margin:32px 0; }
+.minimal-review-carousel .center { flex:1; display:flex; justify-content:center }
+.nav { background:transparent; border:0; font-size:22px; cursor:pointer; color:var(--muted) }
+.nav:hover { color:var(--accent) }

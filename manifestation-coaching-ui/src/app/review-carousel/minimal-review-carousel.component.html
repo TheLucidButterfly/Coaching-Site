@@ -1,0 +1,12 @@
+<section class="minimal-review-carousel">
+  <button class="nav prev" (click)="prev()">‹</button>
+  <div class="center">
+    <app-review-card
+      [author]="reviews[current].author"
+      [text]="reviews[current].text"
+      [role]="reviews[current].role ?? ''"
+      [rating]="reviews[current].rating">
+    </app-review-card>
+  </div>
+  <button class="nav next" (click)="next()">›</button>
+</section>
